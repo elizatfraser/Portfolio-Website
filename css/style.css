@@ -13,7 +13,14 @@ body {
   color: #062256;
 }
 
-h1, h2, h3, h4 {
+/*
+Hi Carlo!
+You mentioned that the "h" is referring to text hierarchy, not styling,
+which I hadn't realised! so for now I have only styled h1-h3 and want
+to discuss the best practice with you in our call.
+*/
+
+h1, h2, h3 {
   line-height: 1.4;
 }
 
@@ -26,6 +33,7 @@ h1 {
 }
 
 h2 {
+  font-size: 1em;
   font-weight: 800;
 }
 
@@ -34,23 +42,27 @@ h3 {
   font-weight: 400;
 }
 
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
 img {
   width: 100%;
 }
+
 a {
-    color: #062256;
+  background-color: #ffffff;
+  color: #062256;
   text-decoration: none;
   font-weight: 400;
 }
+
 a:hover,
 a:focus {
   font-weight: 800;
 }
+
 a:active {
+  font-weight: 800;
+}
+
+.selected {
   font-weight: 800;
 }
 
@@ -60,10 +72,43 @@ a:active {
   color: #ffffff;
   font-weight: 400;
   padding-top: 10px;
-padding-right: 60px;
-padding-bottom: 10px;
-padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  padding-left: 60px;
   border-radius: 3px;
-  border-bottom: 0px solid #ffffff; /* width of the border, type, color */
+  border-bottom: 0px solid #ffffff;
   transition: 0.2s opacity;
+}
+
+.button:hover {
+  text-decoration: none;
+  font-weight: 400;
+  transition: transform .2s;
+  transform: scale(1.1);
+}
+
+.button.contact {
+  background-color: white;
+  color: #062256;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  border-radius: 3px;
+  border-bottom: 0px solid #062256;
+  transition: 0.2s opacity;
+}
+
+.button.contact:hover {
+  text-decoration: none;
+  font-weight: 400;
+  transition: transform .2s;
+  transform: scale(1.1);
+}
+
+.top {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
