@@ -19,7 +19,6 @@ You mentioned that the "h" is referring to text hierarchy, not styling,
 which I hadn't realised! so for now I have only styled h1-h3 and want
 to discuss the best practice with you in our call.
 */
-
 h1, h2, h3 {
   line-height: 1.4;
 }
