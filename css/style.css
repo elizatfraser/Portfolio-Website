@@ -46,19 +46,19 @@ img {
 }
 
 a {
-  background-color: #ffffff;
   color: #062256;
-  text-decoration: none;
-  font-weight: 400;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  font-weight: 800;
+  color: #3e537b;
+  text-decoration: none;
 }
 
 a:active {
-  font-weight: 800;
+  color: #3e537b;
+  text-decoration: none;
 }
 
 .selected {
@@ -70,10 +70,7 @@ a:active {
   background-color: #062256;
   color: #ffffff;
   font-weight: 400;
-  padding-top: 10px;
-  padding-right: 60px;
-  padding-bottom: 10px;
-  padding-left: 60px;
+  padding: 10px 60px;
   border-radius: 3px;
   border-bottom: 0px solid #ffffff;
   transition: 0.2s opacity;
@@ -89,22 +86,9 @@ a:active {
 .button.contact {
   background-color: white;
   color: #062256;
-  font-weight: 400;
-  padding-top: 10px;
-  padding-right: 60px;
-  padding-bottom: 10px;
-  padding-left: 60px;
-  border-radius: 3px;
   border-bottom: 0px solid #062256;
-  transition: 0.2s opacity;
 }
 
-.button.contact:hover {
-  text-decoration: none;
-  font-weight: 400;
-  transition: transform .2s;
-  transform: scale(1.1);
-}
 
 .top {
   font-family: 'Oswald', sans-serif;
