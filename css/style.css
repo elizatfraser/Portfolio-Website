@@ -13,12 +13,6 @@ body {
   color: #062256;
 }
 
-/*
-Hi Carlo!
-You mentioned that the "h" is referring to text hierarchy, not styling,
-which I hadn't realised! so for now I have only styled h1-h3 and want
-to discuss the best practice with you in our call.
-*/
 h1, h2, h3 {
   line-height: 1.4;
 }
@@ -32,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 800;
 }
 
@@ -50,14 +44,19 @@ a {
   text-decoration: underline;
 }
 
+a:visited {
+  color: #334972;
+  text-decoration: none;
+}
+
 a:hover,
 a:focus {
-  color: #3e537b;
+  color: #293345;
   text-decoration: none;
 }
 
 a:active {
-  color: #3e537b;
+  color: #334972;
   text-decoration: none;
 }
 
@@ -65,20 +64,41 @@ a:active {
   font-weight: 800;
 }
 
+.top {
+  font-family: 'Oswald', sans-serif;
+  color: #062256;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.top:hover,
+.top:focus,
+.top:visited {
+  color: #062256;
+}
+
 .button {
   display: inline-block;
   background-color: #062256;
   color: #ffffff;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px 60px;
   border-radius: 3px;
   border-bottom: 0px solid #ffffff;
   transition: 0.2s opacity;
 }
 
+.button:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .button:hover {
   text-decoration: none;
   font-weight: 400;
+  color: #ffffff;
   transition: transform .2s;
   transform: scale(1.1);
 }
@@ -87,11 +107,4 @@ a:active {
   background-color: white;
   color: #062256;
   border-bottom: 0px solid #062256;
-}
-
-
-.top {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
 }
