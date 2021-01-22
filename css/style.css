@@ -19,7 +19,7 @@ body {
 
 header {
   background-color: #ffffff;
-  padding: 1em;
+  padding: 1em 0;
   text-align: right;
 }
 
@@ -59,14 +59,41 @@ h1 {
   font-weight: 700;
 }
 
+h1 span {
+font-family: 'Raleway', sans-serif;
+font-size: 0.36em;
+text-align: center;
+text-transform: none;
+letter-spacing: 0;
+font-weight: 300;
+display: block;
+padding-top: .3em;
+}
+
 h2 {
   font-size: 2em;
   font-weight: 800;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h3 span {
+font-family: 'Raleway', sans-serif;
+font-size: 0.9em;
+text-align: center;
+text-decoration: none;
+text-transform: none;
+letter-spacing: 0;
+font-weight: 300;
+display: block;
+}
+
+p span {
+  font-weight: 800;
 }
 
 html {
@@ -77,12 +104,13 @@ img {
   width: 100%;
 }
 
+
 a {
   color: #062256;
 }
 
 a:visited {
-  color: #334972;
+  color: #062256;
   text-decoration: none;
 }
 
@@ -127,6 +155,7 @@ a:active {
 }
 
 .button.contact_header {
+  text-align: center;
   background-color: white;
   color: #062256;
   border: 2px solid #062256;
@@ -135,6 +164,10 @@ a:active {
 .selected {
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.project_name {
+  text-decoration: none;
 }
 
 .back_to_top {
@@ -162,46 +195,25 @@ a:active {
   max-width: 100px;
 }
 
+.projects .container {
+  padding: 0;
+  text-align: center;
+}
+
+
+.container {
+  padding: 0 1em;
+}
+
+
+.row {
+  margin: 25px 0;
+}
+
 footer {
   background-color: #062256;
   padding: 2em;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
-  text-align: center;
-}
-
-.h1body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0;
-  font-weight: 300;
-  line-height: 0;
-}
-
-.projectname {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0;
-  font-weight: 300;
-  line-height: 0;
-}
-
-.projectheaders {
-  font-weight: 800;
-}
-
-.container {}
-
-.row {
-  margin: 25px 0;
-}
-
-.center {
-  text-align: center;
-  padding: 1em
 }
