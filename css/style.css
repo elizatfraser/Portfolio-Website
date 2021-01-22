@@ -60,14 +60,14 @@ h1 {
 }
 
 h1 span {
-font-family: 'Raleway', sans-serif;
-font-size: 0.36em;
-text-align: center;
-text-transform: none;
-letter-spacing: 0;
-font-weight: 300;
-display: block;
-padding-top: .3em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.36em;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  display: block;
+  padding-top: .3em;
 }
 
 h2 {
@@ -82,14 +82,14 @@ h3 {
 }
 
 h3 span {
-font-family: 'Raleway', sans-serif;
-font-size: 0.9em;
-text-align: center;
-text-decoration: none;
-text-transform: none;
-letter-spacing: 0;
-font-weight: 300;
-display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  display: block;
 }
 
 p span {
@@ -103,7 +103,6 @@ html {
 img {
   width: 100%;
 }
-
 
 a {
   color: #062256;
@@ -200,11 +199,9 @@ a:active {
   text-align: center;
 }
 
-
 .container {
   padding: 0 1em;
 }
-
 
 .row {
   margin: 25px 0;
