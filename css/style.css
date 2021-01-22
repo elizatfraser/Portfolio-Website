@@ -182,21 +182,20 @@ footer {
 }
 
 .projectname {
-font-family: 'Raleway', sans-serif;
-font-size: 16px;
-text-align: center;
-text-transform: none;
-letter-spacing: 0;
-font-weight: 300;
-line-height: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 0;
 }
 
 .projectheaders {
-font-weight: 800;
+  font-weight: 800;
 }
 
-.container {
-}
+.container {}
 
 .row {
   margin: 25px 0;
