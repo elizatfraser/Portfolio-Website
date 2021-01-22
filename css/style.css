@@ -4,6 +4,10 @@ primary color (navy): #062256;
 secondary color (black): rgba(0, 0, 0, .87);
 tertiary color (coral): #FE565A
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -13,12 +17,42 @@ body {
   color: #062256;
 }
 
+header {
+  background-color: #ffffff;
+  padding: 1em;
+  text-align: right;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+nav>ul>li>a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  font-weight: 700;
+}
+
+nav>ul>li>a:visited {
+  color: #062256;
+}
+
+nav>ul>li>a:active {
+  color: #062256;
+}
+
 h1, h2, h3 {
   line-height: 1.4;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-size: 2.75em;
@@ -35,13 +69,16 @@ h3 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
 }
 
 a {
   color: #062256;
-  text-decoration: underline;
 }
 
 a:visited {
@@ -60,33 +97,16 @@ a:active {
   text-decoration: none;
 }
 
-.selected {
-  font-weight: 800;
-}
-
-.top {
-  font-family: 'Oswald', sans-serif;
-  color: #062256;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.top:hover,
-.top:focus,
-.top:visited {
-  color: #062256;
-}
-
 .button {
   display: inline-block;
+  margin: 1.2em auto;
   background-color: #062256;
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px 60px;
-  border-radius: 3px;
-  border-bottom: 0px solid #ffffff;
+  border: 2px solid white;
+  border-radius: 4px;
   transition: 0.2s opacity;
 }
 
@@ -96,9 +116,6 @@ a:active {
 }
 
 .button:hover {
-  text-decoration: none;
-  font-weight: 400;
-  color: #ffffff;
   transition: transform .2s;
   transform: scale(1.1);
 }
@@ -106,5 +123,86 @@ a:active {
 .button.contact {
   background-color: white;
   color: #062256;
-  border-bottom: 0px solid #062256;
+  border: 2px solid white;
+}
+
+.button.contact_header {
+  background-color: white;
+  color: #062256;
+  border: 2px solid #062256;
+}
+
+.selected {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.back_to_top {
+  display: block;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #062256;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back_to_top:visited,
+.back_to_top:hover,
+.back_to_top:focus,
+.back_to_top:active {
+  color: #062256;
+}
+
+.linkedin {
+  display: block;
+  width: 40px;
+  text-align: center;
+  margin: 1.2em auto;
+  max-width: 100px;
+}
+
+footer {
+  background-color: #062256;
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.h1body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 300;
+  line-height: 0;
+}
+
+.projectname {
+font-family: 'Raleway', sans-serif;
+font-size: 16px;
+text-align: center;
+text-transform: none;
+letter-spacing: 0;
+font-weight: 300;
+line-height: 0;
+}
+
+.projectheaders {
+font-weight: 800;
+}
+
+.container {
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.center {
+  text-align: center;
+  padding: 1em
 }
