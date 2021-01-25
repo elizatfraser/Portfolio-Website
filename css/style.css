@@ -236,9 +236,16 @@ a:active {
   display: table;
 }
 
+.animation
+{
+  display: block;
+  width: 50%;
+margin: auto
+}
+
 @keyframes e-move {
   from {
-    transform: translate(-100px, -100px);
+    transform: translate(600px, 600px);
   }
 
   to {
@@ -252,7 +259,7 @@ a:active {
 
 @keyframes l-move {
   from {
-    transform: translate(-100px, -100px);
+    transform: translate(600px, 600px);
   }
 
   to {
@@ -261,12 +268,12 @@ a:active {
 }
 
 .l {
-  animation: 2s l-move;
+  animation: 3s l-move;
 }
 
 @keyframes i-move {
   from {
-    transform: translate(-100px, -100px);
+    transform: translate(600px, 600px);
   }
 
   to {
@@ -275,8 +282,37 @@ a:active {
 }
 
 .i {
-  animation: 2s i-move;
+  animation: 3s i-move;
 }
+
+@keyframes z-move {
+  from {
+    transform: translate(600px, 600px);
+  }
+
+  to {
+    transform-origin: 0px 0px;
+  }
+}
+
+.z {
+  animation: 2s z-move;
+}
+
+@keyframes a-move {
+  from {
+    transform: translate(600px, 600px);
+  }
+
+  to {
+    transform-origin: 0px 0px;
+  }
+}
+
+.a {
+  animation: 2s a-move;
+}
+
 
 footer {
   background-color: #062256;
@@ -297,7 +333,83 @@ footer {
     width: 25%;
     padding: .1em;
   }
+
+
+  @keyframes e-move {
+    from {
+      transform: translate(600px, 600px);
+    }
+
+    to {
+      transform-origin: 0px 0px;
+    }
+  }
+
+  .e {
+    animation: 2s e-move;
+  }
+
+  @keyframes l-move {
+    from {
+      transform: translate(600px, 600px);
+    }
+
+    to {
+      transform-origin: 0px 0px;
+    }
+  }
+
+  .l {
+    animation: 3s l-move;
+  }
+
+  @keyframes i-move {
+    from {
+      transform: translate(600px, 600px);
+    }
+
+    to {
+      transform-origin: 0px 0px;
+    }
+  }
+
+  .i {
+    animation: 3s i-move;
+  }
+
+  @keyframes z-move {
+    from {
+      transform: translate(600px, 600px);
+    }
+
+    to {
+      transform-origin: 0px 0px;
+    }
+  }
+
+  .z {
+    animation: 2s z-move;
+  }
+
+  @keyframes a-move {
+    from {
+      transform: translate(600px, 600px);
+    }
+
+    to {
+      transform-origin: 0px 0px;
+    }
+  }
+
+  .a {
+    animation: 2s a-move;
+  }
+
+
+
 }
+
+
 
 @media only screen and (min-width: 640px) {
   body {
@@ -307,6 +419,8 @@ footer {
   header {
     padding: 1em 1em;
   }
+
+
 
   .text_padding {
     padding: .5em 0;
