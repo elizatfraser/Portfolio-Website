@@ -11,7 +11,7 @@ tertiary color (coral): #FE565A
 body {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.6;
   color: #062256;
@@ -25,6 +25,11 @@ header {
 
 .intro {
   text-align: center;
+}
+
+.about_header {
+  padding: 0 0 1.5em 0;
+  margin: 0;
 }
 
 nav>ul {
@@ -129,10 +134,10 @@ a:active {
 
 .button {
   display: inline-block;
-  margin: 1em;
+  margin: .6em;
   background-color: #062256;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: 400;
   text-decoration: none;
   padding: 4px 20px;
@@ -194,7 +199,7 @@ a:active {
 
 .linkedin {
   display: block;
-  width: 40px;
+  width: 2em;
   text-align: center;
   margin: 1.5em auto;
   max-width: 100px;
@@ -214,7 +219,7 @@ a:active {
 }
 
 .text_padding {
-  padding: 0 1.5em;
+  padding: .5em 2em;
 }
 
 .container {
@@ -225,11 +230,143 @@ a:active {
   margin: 25px 0;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@keyframes e-move {
+  from {
+    transform: translate(-100px, -100px);
+  }
+
+  to {
+    transform-origin: 0px 0px;
+  }
+}
+
+.e {
+  animation: 2s e-move;
+}
+
+@keyframes l-move {
+  from {
+    transform: translate(-100px, -100px);
+  }
+
+  to {
+    transform-origin: 0px 0px;
+  }
+}
+
+.l {
+  animation: 2s l-move;
+}
+
+@keyframes i-move {
+  from {
+    transform: translate(-100px, -100px);
+  }
+
+  to {
+    transform-origin: 0px 0px;
+  }
+}
+
+.i {
+  animation: 2s i-move;
+}
+
 footer {
   background-color: #062256;
-  padding: 2em 1em .2em 1em;
+  padding: 4em 1em .2em 1em;
   margin: 0 auto;
   text-align: center;
-  font-size: .8em;
+  font-size: .6em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .hide {
+    display: none
+  }
+
+  .col-sm-3 {
+    display: inline-block;
+    width: 25%;
+    padding: .1em;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  header {
+    padding: 1em 1em;
+  }
+
+  .text_padding {
+    padding: .5em 0;
+  }
+
+  .col-md-2 {
+    display: inline-block;
+    width: 16.66%;
+    padding: 1em;
+  }
+
+  .col-md-9 {
+    width: 75%;
+    margin: auto;
+  }
+
+  .col-md-6 {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1.3em;
+  }
+
+  .hide-name {
+    display: none
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text_padding {
+    padding: .5em 0;
+    width: 50%;
+    margin: auto;
+  }
+
+  .col-lg-2 {
+    display: inline-block;
+    width: 16.66%;
+    padding: 1em;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+    margin: auto;
+  }
+
+  .col-lg-6 {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 1em;
+  }
 }
