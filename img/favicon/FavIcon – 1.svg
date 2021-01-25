@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <clipPath id="clip-FavIcon_1">
+      <rect width="1080" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="FavIcon_1" data-name="FavIcon – 1" clip-path="url(#clip-FavIcon_1)">
+    <text id="E" transform="translate(110 454.711)" fill="#062256" font-size="472" font-family="Impact" letter-spacing="0.05em"><tspan x="0" y="0">E</tspan></text>
+    <text id="I" transform="translate(110 860)" fill="#062256" font-size="472" font-family="Impact" letter-spacing="0.05em"><tspan x="0" y="0">I</tspan></text>
+    <text id="l" transform="translate(760 452.711)" fill="#062256" font-size="471" font-family="Impact" letter-spacing="0.05em"><tspan x="0" y="0">L</tspan></text>
+    <text id="z" transform="translate(423 862)" fill="#062256" font-size="474" font-family="Impact" letter-spacing="0.05em"><tspan x="0" y="0">Z</tspan></text>
+    <text id="a" transform="translate(741 1017)" fill="#062256" font-size="473" font-family="Impact" letter-spacing="0.05em"><tspan x="0" y="0">A</tspan></text>
+  </g>
+</svg>
