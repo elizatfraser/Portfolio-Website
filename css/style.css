@@ -252,6 +252,11 @@ a:active {
   margin: auto
 }
 
+hr {
+  width: 60%;
+  margin-left: auto;
+}
+
 @keyframes e-move {
   from {
     transform: translate(600px, 600px);
