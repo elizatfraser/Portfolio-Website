@@ -55,9 +55,9 @@ header {
 body {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  font-size: .9em;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #062256;
 }
 
@@ -71,24 +71,17 @@ footer {
 }
 
 @media only screen and (min-width: 640px) {
-  body {
-    font-size: 1.1em;
-  }
 
   header {
     padding: 1em 1em;
   }
-}
-
-@media only screen and (min-width: 640px) {
   body {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
-  header {
-    padding: 1em 1em;
-  }
+
 }
+
 
 /*=======================
 TYPOGRAPHY
@@ -146,9 +139,6 @@ p span {
   font-weight: 800;
 }
 
-@media only screen and (min-width: 640px) {}
-
-@media only screen and (min-width: 1024px) {}
 
 @media only screen and (min-width: 1024px) {
   .projects h3 {
@@ -159,9 +149,12 @@ p span {
 /*=======================
 NAVIGATION
 ========================*/
+
+
 nav>ul {
   list-style-type: none;
   padding: 10px 0;
+  font-size: 1.1em;
 }
 
 nav>ul>li>a {
@@ -200,6 +193,8 @@ nav h1 {
 /*=======================
 LINKS
 ========================*/
+
+
 a {
   color: #062256;
 }
@@ -227,6 +222,8 @@ a:active {
 /*=======================
 BUTTONS
 ========================*/
+
+
 .button {
   display: inline-block;
   margin: .6em;
@@ -254,7 +251,6 @@ BUTTONS
 .button.contact {
   background-color: white;
   color: #062256;
-  border: 2px solid white;
 }
 
 .button.contact_header {
@@ -294,6 +290,8 @@ BUTTONS
 /*=======================
 ROWS & COLUMNS
 ========================*/
+
+
 .container {
   padding: 0 1em;
 }
@@ -310,7 +308,6 @@ ROWS & COLUMNS
 
 .projects {
   text-align: center;
-  width: 83.33%;
   margin: auto;
 }
 
@@ -318,7 +315,14 @@ ROWS & COLUMNS
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0;
+  justify-content: center;
+
 }
+
+.left-text{
+  text-align: left;
+  }
+
 
 .col-2 {
   width: 16.66%;
@@ -360,11 +364,11 @@ ROWS & COLUMNS
   width: 91.66%;
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
-  .col-sm-3 {
-    width: 25%;
-    padding: .1em;
-  }
+@media screen and (max-width: 640px) {
+
+  .left-text{
+    padding: 0 1em;
+    }
 
   .projects .row {
     display: flex;
@@ -378,6 +382,15 @@ ROWS & COLUMNS
     width: 100%;
     padding: 1em 0;
   }
+
+  .landing-page .container {
+    padding: 0;
+    }
+
+    .landing-page h3 {
+      padding: 0 1em;
+    }
+
 }
 
 @media only screen and (min-width: 640px) {
@@ -421,6 +434,12 @@ ROWS & COLUMNS
     opacity: 1;
   }
 
+.about {
+  width: 50%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -430,7 +449,9 @@ ROWS & COLUMNS
   .col-lg-6 {
     width: 50%;
     padding: 1em;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .col-lg-9 {
@@ -441,6 +462,8 @@ ROWS & COLUMNS
   .projects {
     width: 66.66%;
   }
+
+
 }
 
 /*=======================
