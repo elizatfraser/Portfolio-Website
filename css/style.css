@@ -71,17 +71,14 @@ footer {
 }
 
 @media only screen and (min-width: 640px) {
-
   header {
     padding: 1em 1em;
   }
+
   body {
     font-size: 1em;
   }
-
-
 }
-
 
 /*=======================
 TYPOGRAPHY
@@ -139,7 +136,6 @@ p span {
   font-weight: 800;
 }
 
-
 @media only screen and (min-width: 1024px) {
   .projects h3 {
     margin: 0;
@@ -149,8 +145,6 @@ p span {
 /*=======================
 NAVIGATION
 ========================*/
-
-
 nav>ul {
   list-style-type: none;
   padding: 10px 0;
@@ -193,8 +187,6 @@ nav h1 {
 /*=======================
 LINKS
 ========================*/
-
-
 a {
   color: #062256;
 }
@@ -222,8 +214,6 @@ a:active {
 /*=======================
 BUTTONS
 ========================*/
-
-
 .button {
   display: inline-block;
   margin: .6em;
@@ -290,8 +280,6 @@ BUTTONS
 /*=======================
 ROWS & COLUMNS
 ========================*/
-
-
 .container {
   padding: 0 1em;
 }
@@ -316,13 +304,11 @@ ROWS & COLUMNS
   flex-wrap: wrap;
   padding: 1em 0;
   justify-content: center;
-
 }
 
-.left-text{
+.left-text {
   text-align: left;
-  }
-
+}
 
 .col-2 {
   width: 16.66%;
@@ -365,10 +351,9 @@ ROWS & COLUMNS
 }
 
 @media screen and (max-width: 640px) {
-
-  .left-text{
+  .left-text {
     padding: 0 1em;
-    }
+  }
 
   .projects .row {
     display: flex;
@@ -385,12 +370,11 @@ ROWS & COLUMNS
 
   .landing-page .container {
     padding: 0;
-    }
+  }
 
-    .landing-page h3 {
-      padding: 0 1em;
-    }
-
+  .landing-page h3 {
+    padding: 0 1em;
+  }
 }
 
 @media only screen and (min-width: 640px) {
@@ -434,11 +418,11 @@ ROWS & COLUMNS
     opacity: 1;
   }
 
-.about {
-  width: 50%;
-  padding: 1em;
-  margin: 0 auto;
-}
+  .about {
+    width: 50%;
+    padding: 1em;
+    margin: 0 auto;
+  }
 
   .container {
     max-width: 1200px;
@@ -462,8 +446,6 @@ ROWS & COLUMNS
   .projects {
     width: 66.66%;
   }
-
-
 }
 
 /*=======================
