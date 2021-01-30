@@ -18,16 +18,19 @@
 <body>
   <header id="backtotop">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li> <a href="about.html">Hello</a></li>
-          <li>
-            <h1>Swell</h1>
-          </li>
-        </ul>
-      </nav>
-
+      <div class="navtoggle" id="myNavtoggle">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="about.html">Hello</a></li>
+            <li>
+              <h1>Swell</h1>
+            </li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <img src="img/svg/bars-regular.svg" alt="Menu"></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -46,30 +49,30 @@
     </div>
     <div class="section projects">
       <div class="container">
-        <div class="row part-1 col-md-9 col-lg-9">
+        <div class="row">
 
-          <div class="column col-6">
+          <div class="column">
             <p><span>Brief</span><br>
               Create a weather app for surfers, using creative solutions to show weather data in a simple and informative way.
             </p>
           </div>
-          <div class="column col-6">
+          <div class="column">
             <p><span>Deliverables</span><br>
               Exploratory Research, Business Requirement Document, User Interviews, Personas, User journey’s, User flows, Wireframes, Mid- High Fidelity Prototypes, Usability Test Results, Visual Style Guide & Design Language.
             </p>
           </div>
-          <div class="column col-6">
+          <div class="column">
             <p><span>Role</span><br>
               Experience Strategist, Interaction Designer, User Researcher, Information Architect, UX/UI Designer
             </p>
           </div>
-          <div class="column col-6">
+          <div class="column">
             <p><span>Design tools</span><br>
               Adobe XD, Adobe Illustrator, Axure RP, InVision, Marvel, Google Forms
             </p>
           </div>
           <hr>
-          <div class="row part-1">
+          <div class="row">
             <div class="column">
               <h2> Experience Strategy </h2>
               <h3> Making surfing for everyone </h3>
@@ -86,7 +89,7 @@
           <hr>
         </div>
 
-        <div class="row part-1">
+        <div class="row">
           <div class="column">
             <h2> DESIGN THINKING </h2>
             <h3> How I made waves in a digital space </h3>
@@ -133,7 +136,7 @@
     <!-- Not sure how to put the "Discover" divider in -->
     <div class="section projects">
       <div class="container">
-        <div class="row part-1">
+        <div class="row">
           <div class="column">
             <h2> COMPETITOR ANALYSIS </h2>
             <h3> Keeping an eye on the competitor </h3>
@@ -143,49 +146,79 @@
               This research was where I was able to uncover key insights around current trends in market leading surfing apps, which helped inform my design approach.</p>
           </div>
         </div>
-        <div class="row part-1">
+        <div class="row">
           <div class="column">
             <h2> Do </h2>
-            <svg id="checkbox" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-              <path
-                d="M256.23,14.8H43.77a29,29,0,0,0-29,29V256.23a29,29,0,0,0,29,29H256.23a29,29,0,0,0,29-29V43.77A29,29,0,0,0,256.23,14.8Zm0,19.31a9.67,9.67,0,0,1,9.66,9.66V256.23a9.67,9.67,0,0,1-9.66,9.66H43.77a9.67,9.67,0,0,1-9.66-9.66V43.77a9.67,9.67,0,0,1,9.66-9.66H256.23m-20.7,59.33-5.1-5.14a7.25,7.25,0,0,0-10.25,0l-98.65,97.86-41.63-42a7.24,7.24,0,0,0-10.24,0l-5.15,5.1a7.25,7.25,0,0,0,0,10.24l51.84,52.25a7.24,7.24,0,0,0,10.24,0L235.49,103.68a7.24,7.24,0,0,0,0-10.24Z" />
-            </svg>
+            <img src="img/swell/svg/checkbox.svg" alt="Do">
             <p>Provide real time data and weather graphs </p>
             <p>Add value with local knowledge</p>
             <p>Use a simple interface with clear call to actions</p>
           </div>
         </div>
-        <div class="row part-1">
+        <div class="row">
           <div class="column">
             <h2> Don't </h2>
-            <svg id="cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-              <path
-                d="M256.13,14.93H43.87A28.94,28.94,0,0,0,14.93,43.87V256.13a28.94,28.94,0,0,0,28.94,28.94H256.13a28.94,28.94,0,0,0,28.94-28.94V43.87A28.94,28.94,0,0,0,256.13,14.93Zm9.64,241.2a9.67,9.67,0,0,1-9.64,9.64H43.87a9.67,9.67,0,0,1-9.64-9.64V43.87a9.67,9.67,0,0,1,9.64-9.64H256.13a9.67,9.67,0,0,1,9.64,9.64ZM207.16,108.21,165.38,150l41.78,41.79a7.23,7.23,0,0,1,0,10.25L202,207.16a7.23,7.23,0,0,1-10.25,0L150,165.38l-41.79,41.78a7.23,7.23,0,0,1-10.25,0L92.84,202a7.23,7.23,0,0,1,0-10.25L134.62,150,92.84,108.21a7.23,7.23,0,0,1,0-10.25L98,92.84a7.23,7.23,0,0,1,10.25,0L150,134.62l41.79-41.78a7.23,7.23,0,0,1,10.25,0L207.16,98a7.34,7.34,0,0,1,0,10.25Z" />
-            </svg>
+            <img src="img/swell/svg/checkbox.svg" alt="Do">
             <p>Clutter the screen by showing multiple weather graphs at once</p>
             <p>Drive crowds to quiet beaches by promoting them too much</p>
             <p>Fill the screen with advertising space</p>
           </div>
         </div>
         <hr>
-        <div class="row part-1">
+        <div class="row">
           <div class="column">
             <h2> USER INTERVIEWS </h2>
-            <h3> Exploring the problem  </h3>
+            <h3> Exploring the problem </h3>
             <h4> To find possible solutions, I must first determine what the user wants me to achieve </h4>
             <p>I needed to understand the problem from a users perspective, so I completed <span>user surveys</span> to get into their heads and started to build a picture of what they needed and wanted.
             </p>
             <div class="column">
-            <h4> I gave users a voice and this is what they said </h4>
+              <h4> I gave users a voice and this is what they said </h4>
+            </div>
+            <div class="column">
+              <img src="img/swell/svg/iconweather.svg" alt="Icon weather">
+            </div>
+            <div class="column">
+              <h4> The perfect swell shouldn’t be guesswork </h4>
+            </div>
+            <div class="column">
+              <p>
+                Our users told us that there’s nothing better than a surf in perfect conditions, however most users admit that attempting to read complex weather maps leave them frustrated and more likely to close an app and just “wing it”.
+
+                <span>Users wanted simple. Graphs and charts that anyone could understand, clearly labeled with options for help if necessary.</span>
+              </p>
+            </div>
+            <div class="column">
+              <img src="img/swell/svg/icontechnology.svg" alt="Icon technology">
+            </div>
+            <div class="column">
+              <h4> Please, keep it together! </h4>
+            </div>
+            <div class="column">
+              <p>
+                90% of users had to visit multiple sources to find all the data they needed before heading out for a surf.
+                There wasn’t an app on the market that gave full weather charts in a clear and simple presentation that would cater for all skill levels.
+                <span>Users wanted a one stop shop. They wanted to be able to view the weather, a surf cam, and wind/wind charts, while also having general information about the type of beach it is.</span>
+              </p>
+            </div>
           </div>
+          <hr>
+          <!-- Not sure how to put the "Define" divider in -->
+          <div class="row">
+            <div class="column">
+              <h2> USER PERSONA’S </h2>
+              <h3> Building empathy with the target audience </h3>
+              <h4>I start to narrow the scope and define the needs and motivations of the target audience</h4>
+              <p>In <span>user interviews</span> I used a <span>divergent strategy </span>to gain as much insight as possible about the potential users. I then used <span>affinity mapping </span>to identify themes of thought and behaviour between the
+                diverse group.
+                From this I created two <span>user persona’s.</span> These were based on the two clear types of people that emerged from the <span>user interviews.</span>
+              </p>
+            </div>
+
+          </div>
+
         </div>
-
-
-
       </div>
-
-    </div>
-</div>
 
   </main>
   <footer>
@@ -209,7 +242,8 @@
       Copyright Eliza Fraser 2021
     </p>
   </footer>
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
