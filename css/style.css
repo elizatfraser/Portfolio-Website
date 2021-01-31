@@ -52,7 +52,7 @@ margin: 0;
 #swell h3 {
   font-size: 2em;
   text-transform: none;
-  line-height: 1.1;
+  line-height: 1.4;
   padding-top: .5em;
   margin: 0;
 }
@@ -61,6 +61,7 @@ margin: 0;
 color: #fe565a;
 font-weight: 800;
 text-align: left;
+
 }
 
 
@@ -68,26 +69,35 @@ text-align: left;
   font-size: 1em;
   text-transform: none;
   color: #fe565a;
-  line-height: 1.1;
-
+margin-bottom: 2em;
 }
 
-#swell p:first-child {
-  margin-top: 0;
-}
 
 #swell .projects .row {
-  padding: 3em 0;
+  padding: 2em 0;
 }
+
+#swell .projects .row .no-padding{
+  padding: 0em;
+}
+
+
 
 .no-h4 {
   margin-top: 2em;
 }
 
 .img-margin {
-  margin: 2em 0;
+  margin: 4em 0;
 }
 
+.img-sml-margin {
+  margin: 0 2em;
+}
+
+.img-1-margin{
+  margin: 1em 2em;
+}
 
 
 a.designstage {
@@ -119,9 +129,11 @@ flex-direction: column;
 }
 
 @media (max-width: 640px) {
+  /*
 .img-margin {
-margin: 1em 2em;
+margin: 4em 2em;
 }
+*/
 
 }
 
@@ -163,14 +175,24 @@ margin: 1em 2em;
   background-color: #fe565a;
   padding: 20px 0;
   width: 100%;
-  text-align: center;
 }
+
+.divider h1{
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 
 .checkbox
 {
-  width: 15%;
+  max-width: 2em;
   margin: 0;
   padding: 0;
+  display: flex;
+flex-wrap: wrap;
 }
 
 #swell .col-3{
@@ -463,10 +485,14 @@ a.back_to_top:active {
   justify-content: center;
 }
 
-.container.social {
-  text-align: center;
-  margin: 1.5em auto;
-  max-width: 3em;
+.social {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.social img {
+max-width: 3em;
+margin: 1em;
 }
 
 /*=======================
@@ -480,6 +506,7 @@ ROWS & COLUMNS
 .row {
   margin: 1em 0;
 }
+
 
 .row::after {
   content: "";
@@ -606,6 +633,11 @@ ROWS & COLUMNS
     width: 75%;
     margin: auto;
   }
+
+  .col-md-10 {
+    width: 75%;
+  }
+
 }
 
 @media (max-width: 1023px) {
