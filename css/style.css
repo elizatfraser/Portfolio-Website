@@ -24,6 +24,7 @@ hr {
   margin-left: auto;
 }
 
+
 @media screen and (min-width: 0px) and (max-width: 640px) {
   .hide {
     display: none;
@@ -34,6 +35,136 @@ hr {
   }
 }
 
+
+
+/*=======================
+SWELL STYLING
+========================*/
+
+#swell h2 {
+  font-size: 1em;
+text-transform: uppercase;
+color: #FE565A;
+margin: 0;
+}
+
+
+#swell h3 {
+  font-size: 2em;
+  text-transform: none;
+  line-height: 1.1;
+  padding-top: .5em;
+  margin: 0;
+}
+
+#swell h3 span {
+color: #fe565a;
+font-weight: 800;
+text-align: left;
+}
+
+
+#swell h4 {
+  font-size: 1em;
+  text-transform: none;
+  color: #fe565a;
+  line-height: 1.1;
+
+}
+
+#swell p:first-child {
+  margin-top: 0;
+}
+
+#swell .projects .row {
+  padding: 3em 0;
+}
+
+.no-h4 {
+  margin-top: 2em;
+}
+
+.img-margin {
+  margin: 2em 0;
+}
+
+
+
+a.designstage {
+  display: inline-block;
+  margin: 1em;
+  background-color: #062256;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  transition: 0.2s opacity;
+  min-width: 200px;
+}
+
+
+
+@media (max-width: 640px) {
+.img-margin {
+margin: 1em 2em;
+}
+
+.col-sm-designstage {
+  flex-direction: column;
+}
+
+}
+
+@media (min-width: 640px) {
+
+  a.designstage {
+    min-width: 100px;
+
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .col-lg-designstage {
+    width: 20%;
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  a.designstage {
+    min-width: 200px;
+  }
+
+  .projects.divider {
+    width: 100%;
+  }
+
+
+}
+
+.divider {
+  background-color: #fe565a;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.checkbox
+{
+  width: 15%;
+  margin: 0;
+  padding: 0;
+}
+
+#swell .col-3{
+  text-align: left;
+  padding-left: 1em;
+}
+
 /*=======================
 HEADER,BODY & FOOTER
 ========================*/
@@ -41,6 +172,9 @@ header {
   background-color: #ffffff;
   padding: 1em 0;
   text-align: right;
+}
+header .container {
+  position: relative;
 }
 
 .about_header {
@@ -188,18 +322,18 @@ nav h1 {
   text-transform: uppercase;
   margin: .2em 0;
 }
-
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 
 .navtoggle li .icon {
   position: absolute;
   width: 100%;
   max-width: 2em;
   color: #062256;
-  top: 0;
-  right:0;
+  top: .5em;
+  right:1.7em;
   font-size: 1.2em;
 }
 
