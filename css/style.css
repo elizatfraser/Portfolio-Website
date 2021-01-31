@@ -52,7 +52,7 @@ margin: 0;
 #swell h3 {
   font-size: 2em;
   text-transform: none;
-  line-height: 1.1;
+  line-height: 1.4;
   padding-top: .5em;
   margin: 0;
 }
@@ -61,6 +61,7 @@ margin: 0;
 color: #fe565a;
 font-weight: 800;
 text-align: left;
+
 }
 
 
@@ -68,14 +69,19 @@ text-align: left;
   font-size: 1em;
   text-transform: none;
   color: #fe565a;
-  line-height: 1.1;
-
+margin-bottom: 2em;
 }
 
 
 #swell .projects .row {
-  padding: 3em 0;
+  padding: 2em 0;
 }
+
+#swell .projects .row .no-padding{
+  padding: 0em;
+}
+
+
 
 .no-h4 {
   margin-top: 2em;
@@ -83,6 +89,14 @@ text-align: left;
 
 .img-margin {
   margin: 4em 0;
+}
+
+.img-sml-margin {
+  margin: 0 2em;
+}
+
+.img-1-margin{
+  margin: 1em 2em;
 }
 
 
@@ -115,9 +129,11 @@ flex-direction: column;
 }
 
 @media (max-width: 640px) {
+  /*
 .img-margin {
 margin: 4em 2em;
 }
+*/
 
 }
 
@@ -159,14 +175,24 @@ margin: 4em 2em;
   background-color: #fe565a;
   padding: 20px 0;
   width: 100%;
-  text-align: center;
 }
+
+.divider h1{
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 
 .checkbox
 {
-  width: 15%;
+  max-width: 2em;
   margin: 0;
   padding: 0;
+  display: flex;
+flex-wrap: wrap;
 }
 
 #swell .col-3{
@@ -480,6 +506,7 @@ ROWS & COLUMNS
 .row {
   margin: 1em 0;
 }
+
 
 .row::after {
   content: "";
