@@ -25,7 +25,7 @@ hr {
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
+@media (max-width: 640px) {
   .hide {
     display: none;
   }
@@ -34,6 +34,7 @@ hr {
     width: 100%;
   }
 }
+
 
 
 
@@ -88,7 +89,7 @@ margin-bottom: 2em;
 }
 
 .img-margin {
-  margin: 4em 0;
+  margin: 4em 2em;
 }
 
 .img-sml-margin {
@@ -146,12 +147,24 @@ margin: 4em 2em;
     flex-direction: row;
       justify-content: space-between;
     }
+    .md-hide {
+      display: none;
+    }
 
+.md-2up {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 }
 
 @media (min-width: 1024px) {
 
+  #swell .col-lg-6 {
+    padding: 0 2em;
+    flex-direction: column;
+  }
 
 
   .col-lg-designstage {
@@ -531,11 +544,11 @@ ROWS & COLUMNS
 }
 
 .about {
-  padding: 0 2em;
+  padding: 1em 2em;
 }
 
 .about h1 {
-  margin: 0;
+  margin: 1em 0;
 }
 
 .logos img {
@@ -549,6 +562,10 @@ ROWS & COLUMNS
   width: 100%;
   max-width: 60%;
   margin: 0 auto;
+}
+
+.background-image {
+  display:none;
 }
 
 .col-2 {
@@ -640,6 +657,7 @@ ROWS & COLUMNS
 
 }
 
+
 @media (max-width: 1023px) {
   .landing-page {
     text-align: center;
@@ -690,8 +708,12 @@ ROWS & COLUMNS
 
   .about {
     width: 50%;
-    margin: 0 auto;
+    margin: 0em auto;
   }
+  .about h1{
+    margin: 0em auto;
+  }
+
 
   .container {
     max-width: 1200px;
@@ -725,6 +747,7 @@ ANIMATION & KEYFRAMES
   width: 50%;
   margin: auto
 }
+
 
 @keyframes e-move {
   from {
