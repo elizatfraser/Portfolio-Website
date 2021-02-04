@@ -24,7 +24,6 @@ hr {
   margin-left: auto;
 }
 
-
 @media (max-width: 640px) {
   .hide {
     display: none;
@@ -35,20 +34,15 @@ hr {
   }
 }
 
-
-
-
 /*=======================
 SWELL STYLING
 ========================*/
-
 #swell h2 {
   font-size: 1em;
-text-transform: uppercase;
-color: #FE565A;
-margin: 0;
+  text-transform: uppercase;
+  color: #FE565A;
+  margin: 0;
 }
-
 
 #swell h3 {
   font-size: 2em;
@@ -59,30 +53,25 @@ margin: 0;
 }
 
 #swell h3 span {
-color: #fe565a;
-font-weight: 800;
-text-align: left;
-
+  color: #fe565a;
+  font-weight: 800;
+  text-align: left;
 }
-
 
 #swell h4 {
   font-size: 1em;
   text-transform: none;
   color: #fe565a;
-margin-bottom: 2em;
+  margin-bottom: 2em;
 }
-
 
 #swell .projects .row {
   padding: 2em 0;
 }
 
-#swell .projects .row .no-padding{
+#swell .projects .row .no-padding {
   padding: 0em;
 }
-
-
 
 .no-h4 {
   margin-top: 2em;
@@ -96,10 +85,9 @@ margin-bottom: 2em;
   margin: 0 2em;
 }
 
-.img-1-margin{
+.img-1-margin {
   margin: 1em 2em;
 }
-
 
 a.designstage {
   display: inline-block;
@@ -121,12 +109,12 @@ a.designstage:visited,
 a.designstage:hover,
 a.designstage:focus,
 a.designstage:active {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-.designstage-buttons{
+.designstage-buttons {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 640px) {
@@ -135,37 +123,34 @@ flex-direction: column;
 margin: 4em 2em;
 }
 */
-
 }
 
 @media (min-width: 640px) {
-
   a.designstage {
     min-width: 10em;
   }
+
   .designstage-buttons {
     flex-direction: row;
-      justify-content: space-between;
-    }
-    .md-hide {
-      display: none;
-    }
+    justify-content: space-between;
+  }
 
-.md-2up {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-}
+  .md-hide {
+    display: none;
+  }
 
+  .md-2up {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1024px) {
-
   #swell .col-lg-6 {
     padding: 0 2em;
     flex-direction: column;
   }
-
 
   .col-lg-designstage {
     width: 20%;
@@ -175,13 +160,9 @@ margin: 4em 2em;
     flex-wrap: wrap;
   }
 
-
-
   .projects.divider {
     width: 100%;
   }
-
-
 }
 
 .divider {
@@ -190,7 +171,7 @@ margin: 4em 2em;
   width: 100%;
 }
 
-.divider h1{
+.divider h1 {
   color: #ffffff;
   text-align: center;
   display: flex;
@@ -198,17 +179,15 @@ margin: 4em 2em;
   margin: auto;
 }
 
-
-.checkbox
-{
+.checkbox {
   max-width: 2em;
   margin: 0;
   padding: 0;
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-#swell .col-3{
+#swell .col-3 {
   text-align: left;
   padding-left: 1em;
 }
@@ -221,6 +200,7 @@ header {
   padding: 1em 0;
   text-align: right;
 }
+
 header .container {
   position: relative;
 }
@@ -370,10 +350,10 @@ nav h1 {
   text-transform: uppercase;
   margin: .2em 0;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
-
 
 .navtoggle li .icon {
   position: absolute;
@@ -381,7 +361,7 @@ nav h1 {
   max-width: 2em;
   color: #062256;
   top: .5em;
-  right:1.7em;
+  right: 1.7em;
   font-size: 1.2em;
 }
 
@@ -499,13 +479,14 @@ a.back_to_top:active {
 }
 
 .social {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .social img {
-max-width: 3em;
-margin: 1em;
+  max-width: 3em;
+  margin: 1em;
 }
 
 /*=======================
@@ -519,7 +500,6 @@ ROWS & COLUMNS
 .row {
   margin: 1em 0;
 }
-
 
 .row::after {
   content: "";
@@ -565,7 +545,7 @@ ROWS & COLUMNS
 }
 
 .background-image {
-  display:none;
+  display: none;
 }
 
 .col-2 {
@@ -625,7 +605,6 @@ ROWS & COLUMNS
 }
 
 @media (min-width: 640px) {
-
   .col-md-10 {
     width: 83.33%;
   }
@@ -654,9 +633,7 @@ ROWS & COLUMNS
   .col-md-10 {
     width: 75%;
   }
-
 }
-
 
 @media (max-width: 1023px) {
   .landing-page {
@@ -710,10 +687,10 @@ ROWS & COLUMNS
     width: 50%;
     margin: 0em auto;
   }
-  .about h1{
+
+  .about h1 {
     margin: 0em auto;
   }
-
 
   .container {
     max-width: 1200px;
@@ -747,7 +724,6 @@ ANIMATION & KEYFRAMES
   width: 50%;
   margin: auto
 }
-
 
 @keyframes e-move {
   from {
