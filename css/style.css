@@ -350,6 +350,11 @@ h3 {
   text-decoration: none;
 }
 
+h3 span{
+  font-weight: 300;
+  text-transform: none;
+}
+
 
 .projects h3 {
   margin-bottom: 3em;
@@ -483,12 +488,10 @@ BUTTONS
   transition: 0.2s opacity;
   min-width: 200px;
 }
-
 .button:visited {
   color: #ffffff;
   text-decoration: none;
 }
-
 .button:hover {
   transition: transform .2s;
   transform: scale(1.1);
