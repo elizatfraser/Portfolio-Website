@@ -4,6 +4,8 @@ primary color (navy): #062256;
 secondary color (black): rgba(0, 0, 0, .87);
 tertiary color (coral): #FE565A
 */
+
+
 /*=======================
 GLOBAL
 ========================*/
@@ -646,15 +648,13 @@ ROWS & COLUMNS
     padding: 0 1em;
   }
 
-<<<<<<< Updated upstream
   .col-md-6 {
     display: inline-block;
     width: 50%;
     padding: 1em;
   }
-=======
+
 @media (min-width: 640px) {
->>>>>>> Stashed changes
 
   .logos img {
     max-width: 20%;
@@ -671,9 +671,6 @@ ROWS & COLUMNS
   .left-text {
     padding: 0 2em;
   }
-
-
-
   .col-md-9 {
     width: 75%;
     margin: auto;
@@ -849,4 +846,5 @@ ANIMATION & KEYFRAMES
 
 .a {
   animation: 2s a-move;
+}
 }
