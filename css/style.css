@@ -19,11 +19,13 @@ img {
   width: 100%;
 }
 
+/*
 hr {
   width: 100%;
   text-align: left;
   margin-left: 0
 }
+*/
 
 @media (max-width: 640px) {
   .hide {
@@ -93,10 +95,6 @@ h3.subheader {
   margin: 1em 2em;
 }
 
-/*
-.dodont {
-  padding: 0 2em !important;
-} */
 .dodont .column {
   display: flex;
   text-align: left;
@@ -231,12 +229,6 @@ a.designstage:active {
     width: 100%;
   }
 
-  /*
-  .dodont {
-    padding: 0 1em !important;
-  }
-
-*/
 }
 
 /*=======================
@@ -648,9 +640,11 @@ a.back_to_top:active {
 }
 
 .social img {
-  max-width: 3em;
-  margin: 1em;
-}
+    max-width: 1.8em;
+    margin: .8em;
+    margin-right: 0;
+  }
+
 
 /*=======================
 ROWS & COLUMNS
