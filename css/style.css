@@ -4,8 +4,6 @@ primary color (navy): #062256;
 secondary color (black): rgba(0, 0, 0, .87);
 tertiary color (coral): #FE565A
 */
-
-
 /*=======================
 GLOBAL
 ========================*/
@@ -22,8 +20,9 @@ img {
 }
 
 hr {
-  width: 60%;
-  margin-left: auto;
+  width: 100%;
+  text-align: left;
+  margin-left: 0
 }
 
 @media (max-width: 640px) {
@@ -54,14 +53,12 @@ SWELL STYLING
   margin: 0;
 }
 
-
 h3.subheader {
   color: #fe565a;
   font-weight: 800;
   text-align: left;
   font-size: 1.6em !important;
 }
-
 
 #swell h4 {
   font-size: 1em;
@@ -100,15 +97,14 @@ h3.subheader {
 .dodont {
   padding: 0 2em !important;
 } */
-
-.dodont .column{
-display:flex;
-text-align: left;
-margin-bottom: 1em;
-align-items: flex-start;
+.dodont .column {
+  display: flex;
+  text-align: left;
+  margin-bottom: 1em;
+  align-items: flex-start;
 }
 
-.dodont .column img{
+.dodont .column img {
   margin-right: 1em;
   max-width: 3em;
 }
@@ -119,24 +115,22 @@ align-items: flex-start;
 
 .row.painpoints {
   padding-top: 0 !important;
-  margin-top: 0 ;
+  margin-top: 0;
   padding-bottom: 0 !important;
   margin-bottom: 0;
 }
 
 .personas {
   align-items: center;
-  margin-top: 0 ;
+  margin-top: 0;
   padding-bottom: 0 !important;
   margin-bottom: 0;
 }
-
 
 .personas2 {
   padding-top: 0 !important;
   padding-bottom: 2em !important;
 }
-
 
 h4.fullwidth {
   text-align: left;
@@ -170,8 +164,6 @@ a.designstage:active {
   color: #ffffff;
 }
 
-
-
 .designstage-buttons {
   margin: 0 2em !important;
   display: flex;
@@ -192,30 +184,26 @@ a.designstage:active {
   margin: auto;
 }
 
-
 #swell .col-3 {
   text-align: left;
   padding-left: 1em;
 }
 
-
 @media (max-width: 640px) {
-  .md-2up img{
+  .md-2up img {
     max-width: 75%;
     align-content: center;
   }
 
- .img-padding{
-   margin: 1em 2em;
- }
-
+  .img-padding {
+    margin: 1em 2em;
+  }
 }
 
 @media (min-width: 640px) {
-
   a.designstage {
     margin: 0;
-}
+  }
 
   .designstage-buttons {
     flex-direction: row;
@@ -239,19 +227,17 @@ a.designstage:active {
     flex-direction: column;
   }
 
-
   .projects.divider {
     width: 100%;
   }
 
-/*
+  /*
   .dodont {
     padding: 0 1em !important;
   }
 
 */
 }
-
 
 /*=======================
 HEADER,BODY & FOOTER
@@ -263,7 +249,10 @@ header {
 }
 
 header .container {
-  position: relative;
+  position: fixed;
+  top: -.5em;
+  right: -.5em;
+  padding-top: 1em;
 }
 
 .about_header {
@@ -272,13 +261,23 @@ header .container {
 }
 
 .intro {
+  margin-top: 8em;
   text-align: center;
 }
+
+.intro-about {
+  margin-top: 3em;
+}
+
+.intro img{
+padding-top: 2em;
+}
+
 
 body {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.7;
   color: #062256;
@@ -286,14 +285,85 @@ body {
 
 footer {
   background-color: #062256;
-  padding: 4em 1em .2em 1em;
+  padding: 4em 1em 2em 2em;
   margin: 0 auto;
-  text-align: center;
-  font-size: .6em;
+  color: #ffffff;
+  font-size: 1.1em;
+}
+
+footer h3 {
+  margin-top: 2em !important;
+  font-weight: 800 ;
+  text-transform: uppercase !important;
+  text-decoration: none;
+line-height: 1.4 !important;
+font-size: 1.17em !important;
+}
+
+footer .row {
+  margin: 0 2em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:visited,
+footer a:hover {
+  color: white;
+}
+
+p.listheader {
+  font-weight: 800;
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  border-bottom: .5px solid white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: .5em 0;
+  line-height: 2em;
+  width: 5%;
+  white-space: nowrap;
+}
+
+footer ul>li>a {
+  text-decoration: none;
+  font-size: .9em;
+}
+
+footer ul>li>a:hover,
+footer ul>li>a:focus {
+  font-weight: 700;
+}
+
+footer ul>li>a:visited {
   color: #ffffff;
 }
 
+footer ul>li>a:active {
+  color: #ffffff;
+}
+
+.copyright {
+  font-size: .8em;
+  font-weight: 800;
+  margin-top: 4em !important;
+  margin-left: 2em;
+  padding: 1em;
+}
+
 @media (min-width: 640px) {
+  header .container {
+    top:1em;
+    right: 1em;
+  }
+
+}
+
+@media (min-width: 850px) {
+  /*
   header {
     padding: 1em 1em;
   }
@@ -301,16 +371,50 @@ footer {
   body {
     font-size: 1em;
   }
+  */
 
-  .navtoggle li:last-child {
-    display: none;
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  h3 .categories {
+    width: 25%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories {
+    width: 20%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .column.offset {
+    margin-left: 15%;
+  }
+
+  footer ul {
+    width: 100%;
+    white-space: nowrap;
   }
 }
 
-@media (max-width: 640px) {
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
+@media (min-width: 1024px){
+
+header .container {
+  right: 4em;
+}
+}
+@media (min-width: 1280px){
+
+header .container {
+  right: 8em;
+}
+
 }
 
 /*=======================
@@ -351,10 +455,10 @@ h3 {
 }
 
 h3 span {
+  display: block;
   font-weight: 300;
   text-transform: none;
 }
-
 
 .projects h3 {
   margin-bottom: 3em;
@@ -363,6 +467,26 @@ h3 span {
 p span {
   font-weight: 800;
 }
+
+.scroll {
+display: none;
+padding: 3em;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+color: #062256;
+text-transform: uppercase;
+font-weight: 700;
+animation: pulse 6s;
+}
+
+
+ @media (min-width: 850px) {
+
+.scroll {
+display: block;
+}
+}
+
 
 @media only screen and (min-width: 1024px) {
   .projects h3 {
@@ -407,36 +531,6 @@ nav h1 {
   margin: .2em 0;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  width: 100%;
-  max-width: 2em;
-  color: #062256;
-  top: .5em;
-  right: 1.7em;
-  font-size: 1.2em;
-}
-
-.navtoggle.responsive li {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 2em 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding: .5em 0;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
 
 .selected {
   font-weight: 800;
@@ -488,18 +582,15 @@ BUTTONS
   transition: 0.2s opacity;
   min-width: 200px;
 }
+
 .button:visited {
   color: #ffffff;
   text-decoration: none;
 }
+
 .button:hover {
   transition: transform .2s;
   transform: scale(1.1);
-}
-
-.button.contact {
-  background-color: white;
-  color: #062256;
 }
 
 .button.contact_header {
@@ -508,6 +599,24 @@ BUTTONS
   font-size: 1em;
   color: #062256;
   border: 2px solid #062256;
+}
+
+.button.contact {
+  text-align: center;
+  background-color: white;
+  font-size: 1em;
+  color: #062256;
+  border: 2px solid #062256;
+  max-width: 100%;
+}
+
+.button.resume {
+  text-align: center;
+  background-color: #062256;
+  font-size: 1em;
+  color: #ffffff;
+  border: 2px solid #062256;
+  max-width: 100%;
 }
 
 a.back_to_top {
@@ -551,7 +660,6 @@ ROWS & COLUMNS
   padding: 0 1em;
 }
 */
-
 .row {
   margin: 1em 0;
 }
@@ -571,6 +679,10 @@ ROWS & COLUMNS
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0;
+}
+
+.globalbrandsheader {
+  padding: 0 2em;
 }
 
 .left-text {
@@ -643,9 +755,14 @@ ROWS & COLUMNS
   width: 91.66%;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
+  .flex-column {
+    flex-direction: column;
+  }
+}
 
-  .col-md-3{
+@media (min-width: 640px) {
+  .col-md-3 {
     width: 25%;
     padding: 0 1em;
   }
@@ -656,7 +773,9 @@ ROWS & COLUMNS
     padding: 1em;
   }
 
-@media (min-width: 640px) {
+  .globalbrandsheader {
+    padding-top: 2em;
+  }
 
   .logos img {
     max-width: 20%;
@@ -673,14 +792,14 @@ ROWS & COLUMNS
   .left-text {
     padding: 0 2em;
   }
+
   .col-md-9 {
     width: 75%;
     margin: auto;
   }
 }
 
-
-  @media (min-width: 640px) and (max-width:1023px) {
+@media (min-width: 640px) and (max-width:1023px) {
   .col-md-10 {
     width: 83.33%;
   }
@@ -694,6 +813,7 @@ ROWS & COLUMNS
   .landing-page {
     text-align: center;
     width: 100%;
+    max-width: 100%;
     padding: 1em 0;
   }
 
@@ -743,6 +863,12 @@ ROWS & COLUMNS
     margin: 0em auto;
   }
 
+  .about.col-9 {
+    width: 75%;
+  }
+
+
+
   .about h1 {
     margin: 0em auto;
   }
@@ -751,6 +877,11 @@ ROWS & COLUMNS
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .container.no-margin {
+    margin: 0;
+    max-width: 100%;
   }
 
   .col-lg-6 {
@@ -779,6 +910,16 @@ ANIMATION & KEYFRAMES
   width: 50%;
   margin: auto
 }
+
+@keyframes pulse {
+  0% {
+opacity: 0%;}
+
+  100% {
+    opacity: 100%;
+  }
+}
+
 
 @keyframes e-move {
   from {
@@ -848,5 +989,4 @@ ANIMATION & KEYFRAMES
 
 .a {
   animation: 2s a-move;
-}
 }
