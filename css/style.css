@@ -19,6 +19,7 @@ img {
   width: 100%;
 }
 
+
 /*
 hr {
   width: 100%;
@@ -26,7 +27,6 @@ hr {
   margin-left: 0
 }
 */
-
 @media (max-width: 640px) {
   .hide {
     display: none;
@@ -228,7 +228,6 @@ a.designstage:active {
   .projects.divider {
     width: 100%;
   }
-
 }
 
 /*=======================
@@ -261,10 +260,9 @@ header .container {
   margin-top: 3em;
 }
 
-.intro img{
-padding-top: 2em;
+.intro img {
+  padding-top: 2em;
 }
-
 
 body {
   background-color: #ffffff;
@@ -285,11 +283,11 @@ footer {
 
 footer h3 {
   margin-top: 2em !important;
-  font-weight: 800 ;
+  font-weight: 800;
   text-transform: uppercase !important;
   text-decoration: none;
-line-height: 1.4 !important;
-font-size: 1.17em !important;
+  line-height: 1.4 !important;
+  font-size: 1.17em !important;
 }
 
 footer .row {
@@ -348,13 +346,13 @@ footer ul>li>a:active {
 
 @media (min-width: 640px) {
   header .container {
-    top:1em;
+    top: 1em;
     right: 1em;
   }
-
 }
 
 @media (min-width: 850px) {
+
   /*
   header {
     padding: 1em 1em;
@@ -364,7 +362,6 @@ footer ul>li>a:active {
     font-size: 1em;
   }
   */
-
   footer .row {
     display: flex;
     flex-wrap: wrap;
@@ -395,18 +392,16 @@ footer ul>li>a:active {
   }
 }
 
-@media (min-width: 1024px){
-
-header .container {
-  right: 4em;
-}
-}
-@media (min-width: 1280px){
-
-header .container {
-  right: 8em;
+@media (min-width: 1024px) {
+  header .container {
+    right: 4em;
+  }
 }
 
+@media (min-width: 1280px) {
+  header .container {
+    right: 8em;
+  }
 }
 
 /*=======================
@@ -461,24 +456,21 @@ p span {
 }
 
 .scroll {
-display: none;
-padding: 3em;
-text-align: center;
-font-family: 'Oswald', sans-serif;
-color: #062256;
-text-transform: uppercase;
-font-weight: 700;
-animation: pulse 6s;
+  display: none;
+  padding: 3em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #062256;
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: pulse 6s;
 }
 
-
- @media (min-width: 850px) {
-
-.scroll {
-display: block;
+@media (min-width: 850px) {
+  .scroll {
+    display: block;
+  }
 }
-}
-
 
 @media only screen and (min-width: 1024px) {
   .projects h3 {
@@ -522,7 +514,6 @@ nav h1 {
   text-transform: uppercase;
   margin: .2em 0;
 }
-
 
 .selected {
   font-weight: 800;
@@ -640,11 +631,10 @@ a.back_to_top:active {
 }
 
 .social img {
-    max-width: 1.8em;
-    margin: .8em;
-    margin-right: 0;
-  }
-
+  max-width: 1.8em;
+  margin: .8em;
+  margin-right: 0;
+}
 
 /*=======================
 ROWS & COLUMNS
@@ -861,8 +851,6 @@ ROWS & COLUMNS
     width: 75%;
   }
 
-
-
   .about h1 {
     margin: 0em auto;
   }
@@ -907,13 +895,13 @@ ANIMATION & KEYFRAMES
 
 @keyframes pulse {
   0% {
-opacity: 0%;}
+    opacity: 0%;
+  }
 
   100% {
     opacity: 100%;
   }
 }
-
 
 @keyframes e-move {
   from {
