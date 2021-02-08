@@ -21,6 +21,7 @@ img {
 
 iframe {
   border: 0;
+  max-width: 80%;
 }
 
 /*
