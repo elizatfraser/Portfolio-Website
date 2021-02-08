@@ -7,22 +7,56 @@ function menuToggle() {
   }
 }
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  myFunction()
-};
+(function(){
 
-// Get the header
-var header = document.getElementById("myHeader");
+  var doc = document.documentElement;
+  var w = window;
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
+  var prevScroll = w.scrollY || doc.scrollTop;
+  var curScroll;
+  var direction = 0;
+  var prevDirection = 0;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+  var header = document.getElementById('site-header');
+
+  var checkScroll = function() {
+
+    /*
+    ** Find the direction of scroll
+    ** 0 - initial, 1 - up, 2 - down
+    */
+
+    curScroll = w.scrollY || doc.scrollTop;
+    if (curScroll > prevScroll) {
+      //scrolled up
+      direction = 2;
+    }
+    else if (curScroll < prevScroll) {
+      //scrolled down
+      direction = 1;
+    }
+
+    if (direction !== prevDirection) {
+      toggleHeader(direction, curScroll);
+    }
+
+    prevScroll = curScroll;
+  };
+
+  var toggleHeader = function(direction, curScroll) {
+    if (direction === 2 && curScroll > 52) {
+
+      //replace 52 with the height of your header in px
+
+      header.classList.add('hidenow');
+      prevDirection = direction;
+    }
+    else if (direction === 1) {
+      header.classList.remove('hidenow');
+      prevDirection = direction;
+    }
+  };
+
+  window.addEventListener('scroll', checkScroll);
+
+})();
