@@ -627,16 +627,10 @@ a.back_to_top:active {
   justify-content: center;
 }
 
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social img {
-  max-width: 1.8em;
-  margin: .8em;
-  margin-right: 0;
+.social .fab {
+  font-size: 2em;
+  margin-left: .4em;
+  margin-top: .3em;
 }
 
 /*=======================
