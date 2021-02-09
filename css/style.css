@@ -24,6 +24,19 @@ iframe {
   max-width: 80%;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0 2em !important;
+}
+
+.flex h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 /*
 hr {
   width: 100%;
@@ -276,6 +289,12 @@ header .container {
 
 .intro img {
   padding-top: 2em;
+}
+
+.emoji img {
+  max-width: 2.9em;
+  margin-left: 1em;
+  padding-top: 2.2em;
 }
 
 body {
