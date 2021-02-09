@@ -1018,5 +1018,35 @@ ANIMATION & KEYFRAMES
     width: 50%;
     margin: auto;
   }
+}
+
+
+/*
+========================
+Attempts to fix safari hide of ANIMATION
+========================
+
+based off:
+ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/
+
+
+@media not all and (min-resolution:.001dpcm) {
+  @media {
+    .safari10 .animation  {
+      display:none;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:0){
+
+.safari6.animation {
+  display:none
+}
 
 }
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+  display:none;
+}
+*/
