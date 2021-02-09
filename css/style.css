@@ -239,9 +239,7 @@ HEADER,BODY & FOOTER
 ========================*/
 header {
   background-color: #ffffff;
-  /*
   padding: 1em 0;
-  */
   text-align: right;
 }
 
@@ -253,6 +251,7 @@ header {
   background-color: #ffffff;
   transition: all .3s ease;
 }
+
 
 /*
 header .container {
@@ -425,20 +424,22 @@ footer ul>li>a:active {
 
   #site-header {
     background-color: transparent;
-    right: 4em;
+    right: 8em;
+    top: 2em;
   }
 }
-
+  /*
 @media (min-width: 1280px) {
   #site-header {
     right: 8em;
   }
-  /*
+
   header .container {
     right: 8em;
   }
-  */
 }
+  */
+
 
 /*=======================
 TYPOGRAPHY
@@ -922,6 +923,7 @@ ANIMATION & KEYFRAMES
   display: block;
   width: 50%;
   margin: auto;
+
 }
 
 
