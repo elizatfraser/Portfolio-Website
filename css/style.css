@@ -928,10 +928,7 @@ ROWS & COLUMNS
 ANIMATION & KEYFRAMES
 ========================*/
 .animation {
-  display: block;
-  width: 50%;
-  margin: auto;
-
+  display: none;
 }
 
 
@@ -1015,9 +1012,11 @@ ANIMATION & KEYFRAMES
   animation: 2s a-move;
 }
 
-@media (max-width: 1023px){
+@media (min-width: 1023px){
   .animation {
-    display: none;
+    display: block;
+    width: 50%;
+    margin: auto;
   }
 
 }
