@@ -37,6 +37,8 @@ iframe {
   padding-bottom: 0;
 }
 
+
+
 /*
 hr {
   width: 100%;
@@ -839,6 +841,11 @@ ROWS & COLUMNS
   .col-md-9 {
     width: 75%;
     margin: auto;
+  }
+
+  .extramargin {
+margin-top: 6em;
+
   }
 }
 
